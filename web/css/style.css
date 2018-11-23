@@ -1,0 +1,117 @@
+body{
+    font-family: Arial;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 70px;
+    /* overflow: hidden; */
+}
+
+.row.result_wrapper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.row.mainGame {
+    display: flex;
+    justify-content: space-around;
+    /* height: 70vh; */
+    margin: 20px 0;
+}
+
+.row{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 10px 20px;
+    flex-wrap: wrap;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.field {
+    display: inline-block;
+    height: 10%;
+    width: 10%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    background-color: white;
+    margin: -1px -1px -1px 0;
+/*    min-height: 40px;
+    min-width: 40px;*/
+    transition: all 0.3s ease;
+}
+
+#result {
+    height: 70px;
+    background: beige;
+    font-size: 2em;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: inline-block;
+    width: 230px;
+    /* border: solid; */
+    text-align: center;
+    background: #ffe4c4;
+    color: #000000;
+    padding: 20px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    background: #ffba66;
+}
+
+#enemyField .ship_1, #enemyField .ship_2{
+    background-color: orange;
+}
+
+#enemyField .ship_3{
+    background-color: gray;
+}
+
+#userField .ship_1{
+    background-color: brown;
+}
+
+#userField .ship_2{
+    background-color: #d0d0d0;
+}
+
+#userField .ship_3{
+    background-color: orange;
+}
+
+#userField .ship_s_3{
+    background-color: lightskyblue;
+}
+
+#userField .ship_s_2, #userField .ship_s_1, #userField .ship_s_4{
+    background-color: coral;
+}
